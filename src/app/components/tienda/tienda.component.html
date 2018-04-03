@@ -1,0 +1,10 @@
+<h1>{{titulo}}</h1>
+
+  <ul>
+    <li>Camiseta rosa</li>
+    <li>Camiseta negra</li>
+  </ul>
+
+  <input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()">
+
+  <app-parques [nombre]="nombreDelParque"></app-parques>
