@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { Input, Output } from '@angular/core';
+import { SimpleChange } from '@angular/core/src/change_detection/change_detection_util';
 
 @Component({
   selector: 'app-parques',
   templateUrl: './parques.component.html',
   styleUrls: ['./parques.component.css']
 })
-export class ParquesComponent implements OnInit {
+export class ParquesComponent implements OnChanges {
   @Input() nombre: string;
   public metros: number;
   public vegetacion: string;
@@ -18,7 +19,12 @@ export class ParquesComponent implements OnInit {
     this.abierto = false;
   }
 
+  ngOnChanges(changes: SimpleChanges){
+    console.log(changes);
+  }
+
   ngOnInit() {
+    console.log("metodo on init lanzado");
   }
 
 }
