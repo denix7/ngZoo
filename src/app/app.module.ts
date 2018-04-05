@@ -9,12 +9,20 @@ import { TiendaComponent } from './components/tienda/tienda.component';
 import { ParquesComponent } from './components/parques/parques.component';
 //import { HttpClient } from 'selenium-webdriver/http';
 import {HttpModule} from '@angular/http';
+import { AnimalsComponent } from './components/animals/animals.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { KeepersComponent } from './components/keepers/keepers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TiendaComponent,
-    ParquesComponent
+    ParquesComponent,
+    AnimalsComponent,
+    HomeComponent,
+    ContactComponent,
+    KeepersComponent
   ],
   imports: [
     BrowserModule,

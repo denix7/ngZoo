@@ -3,7 +3,7 @@ import { Input, Output } from '@angular/core';
 import { SimpleChange } from '@angular/core/src/change_detection/change_detection_util';
 
 @Component({
-  selector: 'app-parques',
+  selector: 'parques',
   templateUrl: './parques.component.html',
   styleUrls: ['./parques.component.css']
 })
