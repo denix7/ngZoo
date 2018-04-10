@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.jumbotron {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 10px black;
+}
