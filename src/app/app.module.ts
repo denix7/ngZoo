@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {routing, appRoutingProviders} from './app.routing';
 
-//componentes
+//Importar nuestro nuevo modulo
+import {AdminModule} from './admin/admin.module';
+
+//Componentes
 import { AppComponent } from './app.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { ParquesComponent } from './components/parques/parques.component';
-//import { HttpClient } from 'selenium-webdriver/http';
 import {HttpModule} from '@angular/http';
 import { AnimalsComponent } from './components/animals/animals.component';
 import { HomeComponent } from './components/home/home.component';
@@ -26,17 +28,14 @@ import { AddComponent } from './admin/components/add/add.component';
     AnimalsComponent,
     HomeComponent,
     ContactComponent,
-    KeepersComponent,
-    MainComponent,
-    ListComponent,
-    EditComponent,
-    AddComponent
+    KeepersComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AdminModule
   ],
   providers: [
     appRoutingProviders
