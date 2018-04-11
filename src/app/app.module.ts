@@ -13,6 +13,10 @@ import { AnimalsComponent } from './components/animals/animals.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { KeepersComponent } from './components/keepers/keepers.component';
+import { MainComponent } from './admin/components/main/main.component';
+import { ListComponent } from './admin/components/list/list.component';
+import { EditComponent } from './admin/components/edit/edit.component';
+import { AddComponent } from './admin/components/add/add.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { KeepersComponent } from './components/keepers/keepers.component';
     AnimalsComponent,
     HomeComponent,
     ContactComponent,
-    KeepersComponent
+    KeepersComponent,
+    MainComponent,
+    ListComponent,
+    EditComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
