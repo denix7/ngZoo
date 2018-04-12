@@ -8,3 +8,16 @@ body{
 .navbar-nav .active{
     border-bottom: 3px solid orange;
 }
+
+.navbar-nav>li>a:hover{
+    border-bottom: 3px solid orange;
+    transition: all 250ms;
+}
+
+.boton-transiciones{
+    padding: 10px;
+    background: red;
+    color: white;
+    border-radius: 20px;
+    border: 4px solid blue;
+}

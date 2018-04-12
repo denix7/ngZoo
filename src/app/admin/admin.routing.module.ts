@@ -37,10 +37,10 @@ const adminRoutes: Routes = [
 
 @NgModule({
     imports: [
-        RouterModule.forChild(adminRoutes)
+        RouterModule.forChild(adminRoutes)//para modulo funcional
     ],
     exports: [
-        RouterModule
+        RouterModule//listo para importarlo 
     ]
 })
 export class AdminRoutingModule{}
