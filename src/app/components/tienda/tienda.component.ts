@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import {trigger, state, style, transition, animate} from '@angular/core';
+import {fadeIn} from '../animation';
 
 @Component({
   selector: 'tienda',
   templateUrl: './tienda.component.html',
   styleUrls: ['./tienda.component.css'],
-  animations: [
+  animations: [fadeIn,
     trigger('marcar', [
       state('inactive', style({
         border: '5px solid #ccc'

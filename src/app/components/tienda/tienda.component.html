@@ -1,3 +1,4 @@
+<div [@fadeIn]>
 
 <a class="btn btn-success boton_activo" 
 [@marcar]="status" (click)="cambiarEstado(status)">Activar boton</a>
@@ -18,3 +19,5 @@
   <input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()">
 
   <parques [nombre]="nombreDelParque"></parques>
+
+</div>
