@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {routing, appRoutingProviders} from './app.routing';
+import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 //Importar nuestro nuevo modulo
 import {AdminModule} from './admin/admin.module';
@@ -35,7 +36,8 @@ import { AddComponent } from './admin/components/add/add.component';
     FormsModule,
     HttpModule,
     routing,
-    AdminModule
+    AdminModule,
+    BrowserAnimationsModule
   ],
   providers: [
     appRoutingProviders
